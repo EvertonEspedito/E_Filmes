@@ -1,0 +1,98 @@
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #8B0000;
+}
+
+#navbar h2 a{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+#navbar form{
+    display: flex;
+    gap: .5rem;
+    
+}
+
+#navbar form button{
+  background-color: #FFD700;
+  border: 2px solid #FFD700;
+  border-radius: 4px;
+  color: black;
+  padding: .3rem;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  transition: .4s;
+}
+
+#navbar form button:hover{
+    background-color: transparent;
+    color: #FFD700;
+}
+
+#navbar input{
+   padding: .2rem .8rem; 
+   border-radius: 4px;
+   border: none;
+   outline: none;
+}
+
+.btns-menu{
+    display: flex;
+    justify-content: space-around;
+    width: 25%;
+}
+.btns-menu a{
+    padding-top: .4rem;
+    margin-right: 1rem;
+    font-size: 20px;
+    background-color: #FFD700;
+    width: 30%;
+    text-align: center;
+    border-radius: 1rem;
+    color: black;
+    font-weight: bold;
+    transition: .5s;
+}
+
+.btns-menu a:hover{
+    background-color: transparent;
+    color: #FFD700;
+    border: 1px solid #FFD700;
+}
+
+/**Responsivo**/
+@media (max-width: 900px) {
+    .btns-menu{
+        display: flex;
+        justify-content: space-around;
+        width: 40%;
+    }
+  }  
+@media (max-width: 460px) {
+    #navbar{
+        display: flex;
+        flex-direction: column;
+    }
+    #navbar h2 a{
+        display: flex;
+        align-items: center;
+        gap: .9rem;
+        margin-bottom: 1rem;
+    }
+    .btns-menu{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .btns-menu a{
+        width: 30%;  
+    }
+}
